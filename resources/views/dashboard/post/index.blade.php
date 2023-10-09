@@ -1,5 +1,7 @@
 @extends('dashboard.master')
 @section('content')
+    @include('dashboard.partials.validation-error')
+
     <a class="btn btn-success mt-3 mb-3" href="{{ route('post.create') }}">
         Crear
     </a>

@@ -1,5 +1,5 @@
 @extends('dashboard.master')
-@section('contenido')
+@section('content')
     @include('dashboard.partials.validation-error')
 
     <form action="{{ route('post.update', $post->id) }}" method="post">
@@ -7,7 +7,7 @@
         @include('dashboard.post._form')
     </form>
 
-    <form action="{{ route('post.image', $post) }}" method="POST" enctype="multipart/form-data">
+    {{-- <form action="{{ route('post.image', $post) }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="row">
             <div class="col">
@@ -17,7 +17,5 @@
                 <input type="submit" value="Subir" class="btn btn-primary">
             </div>
         </div>
-
-
-    </form>
+    </form> --}}
 @endsection

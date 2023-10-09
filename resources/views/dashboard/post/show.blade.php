@@ -1,5 +1,5 @@
 @extends('dashboard.master')
-@section('contenido')
+@section('content')
     @include('dashboard.partials.validation-error')
     <div class="form-group">
         <label for="title">Título</label>
@@ -12,5 +12,9 @@
     <div class="form-group">
         <label for="content">Contenido</label>
         <textarea readonly id="content" cols="30" rows="3" class="form-control">{{ $post->description }}</textarea>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="{{ url()->previous() }}" class="btn btn-danger" type="button">Volver</a>
     </div>
 @endsection

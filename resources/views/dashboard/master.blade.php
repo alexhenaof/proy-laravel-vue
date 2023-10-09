@@ -14,10 +14,9 @@
 
 <body>
     @include('dashboard.partials.nav-header-main')
-    <div class="container section">
+    <div class="container mt-4">
         @include('dashboard.partials.session-status')
-        {{-- @yield('content') --}}
-        @yield('contenido')
+        @yield('content')
     </div>
 
     {{-- <div class="container section">

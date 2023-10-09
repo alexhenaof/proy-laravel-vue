@@ -1,5 +1,5 @@
 @extends('dashboard.master')
-@section('contenido')
+@section('content')
     @include('dashboard.partials.validation-error')
 
     <form action="{{ route('post.store') }}" method="post">
